@@ -3,6 +3,9 @@
 const fs = require('fs');
 const crypto = require("crypto");
 const start = Date.now();
+
+process.env.UV_THREADPOOL_SIZE = 1;//change size of THREADPOOL
+
 setTimeout(() => console.log("[Timer]: Timer 1 finished"), 0);//2
 setImmediate(() => console.log("[Immediate]: Immediate 1 finished"));//5
 
