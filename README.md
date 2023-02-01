@@ -1,0 +1,1 @@
+![how-it-works.png](how-it-works.png)
